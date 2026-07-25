@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+// Even or odd
 public class Main {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
