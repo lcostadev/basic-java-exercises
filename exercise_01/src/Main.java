@@ -5,14 +5,11 @@ public class Main {
         try (Scanner sc = new Scanner(System.in)) {
             System.out.print("Insert a number: ");
             int number = sc.nextInt();
-
             if (number % 2 == 0) {
                 System.out.printf("The number %d is even%n", number);
             } else {
                 System.out.printf("The number %d is odd%n", number);
             }
-
-
         }
     }
 }
