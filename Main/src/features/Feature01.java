@@ -1,9 +1,15 @@
+package features;
 import java.util.Scanner;
 // Even or odd
-public class Main {
+public class Feature01 {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             System.out.print("Insert a number: ");
+            while (!sc.hasNextInt()) {
+                System.out.println("Error: please enter a valid integer.");
+                System.out.print("Insert a number: ");
+                sc.next();
+            }
             int number = sc.nextInt();
             if (number % 2 == 0) {
                 System.out.printf("The number %d is even%n", number);
