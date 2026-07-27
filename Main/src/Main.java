@@ -4,8 +4,21 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
-            // Chama diretamente o método run da Feature02
-            Feature02.run(sc);
+            System.out.println("=== MENU ===");
+            System.out.println("1 - Conversor de Temperatura (Feature02)");
+            System.out.print("Escolha uma opção: ");
+
+            if (!sc.hasNextInt()) {
+                System.out.println("Opção inválida!");
+                return;
+            }
+
+            int option = sc.nextInt();
+
+            switch (option) {
+                case 1 -> Feature02.run(sc);
+                default -> System.out.println("Opção inexistente!");
+            }
         }
     }
 }
