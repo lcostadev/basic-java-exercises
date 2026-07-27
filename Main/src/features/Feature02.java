@@ -1,25 +1,25 @@
 package features;
 import java.util.Scanner;
-// celsius converter
+// Celsius converter
 public class Feature02 {
     public static void run(Scanner sc) { // Lembre-se: use 'run' e receba o Scanner do Main
-        System.out.printf("What do you want calculate?%n1. Celsius to Fahrenheit%n2. Fahrenheit to Celsius");
+        System.out.printf("\nWhat do you want calculate?\n1. Celsius to Fahrenheit\n2. Fahrenheit to Celsius\n");
 
         // Chama a validação passando o Scanner e a mensagem
-        double option = Validation.readDouble(sc, "Option: ");
+        double option = Validation.readDouble("\nChose: ", sc);
 
         if (option == 1) {
-            double celsius = Validation.readDouble(sc, "Digit your celsius temperature: ");
-            double fahrenheit = (celsius * 9 / 5) + 32;
-            System.out.printf("%.1f°C is equal to %.1f°F%n", celsius, fahrenheit);
+            double celsius = Validation.readDouble("\nDigit your celsius temperature: ", sc);
+            double fahrenheit = celsius * 1.8 + 32;
+            System.out.printf("\n%.1f°C is equal to %.1f°F\n\n", celsius, fahrenheit);
 
         } else if (option == 2) {
-            double fahrenheit = Validation.readDouble(sc, "Digit your fahrenheit temperature: ");
+            double fahrenheit = Validation.readDouble("\nDigit your fahrenheit temperature: ", sc);
             double celsius = (fahrenheit - 32) / 1.8;
-            System.out.printf("%.1f°F is equal to %.1f°C%n", fahrenheit, celsius);
+            System.out.printf("\n%.1f°F is equal to %.1f°C\n\n", fahrenheit, celsius);
 
         } else {
-            System.out.println("Invalid option!");
+            System.out.println("\nInvalid option!");
         }
     }
 }

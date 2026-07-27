@@ -1,23 +1,31 @@
+import features.Feature01;
 import features.Feature02;
+import features.Validation;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
-            System.out.println("=== MENU ===");
-            System.out.println("1 - Conversor de Temperatura (Feature02)");
-            System.out.print("Escolha uma opção: ");
 
-            if (!sc.hasNextInt()) {
-                System.out.println("Opção inválida!");
-                return;
-            }
+            boolean running = true;
+            while (running) {
+                System.out.println("=== MENU ===");
+                System.out.println("1 - Even or odd (Feature01)");
+                System.out.println("2 - Temperature convertor (Feature02)");
+                System.out.println("0 - Exit");
 
-            int option = sc.nextInt();
+                // Usa a Validation para pedir e validar a opção do menu
+                int option = Validation.readInt("\nChose a option: ", sc);
 
-            switch (option) {
-                case 1 -> Feature02.run(sc);
-                default -> System.out.println("Opção inexistente!");
+                switch (option) {
+                    case 1 -> Feature01.run(sc);
+                    case 2 -> Feature02.run(sc);
+                    case 0 -> {
+                        System.out.println("\nExiting...");
+                              running = false;
+                    }
+                    default -> System.out.println("\ninvalid number!");
+                }
             }
         }
     }
