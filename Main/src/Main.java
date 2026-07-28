@@ -1,5 +1,6 @@
 import features.Feature01;
 import features.Feature02;
+import features.Feature03;
 import features.Validation;
 import java.util.Scanner;
 
@@ -12,6 +13,7 @@ public class Main {
                 System.out.println("=== MENU ===");
                 System.out.println("1 - Even or odd (Feature01)");
                 System.out.println("2 - Temperature convertor (Feature02)");
+                System.out.println("3 - Currency converter (Feature03) TESTE INTERDITADO, NECESSITA ESTUDO");
                 System.out.println("0 - Exit");
 
                 // Usa a Validation para pedir e validar a opção do menu
@@ -20,6 +22,7 @@ public class Main {
                 switch (option) {
                     case 1 -> Feature01.run(sc);
                     case 2 -> Feature02.run(sc);
+                    case 3 -> Feature03.run(sc);
                     case 0 -> {
                         System.out.println("\nExiting...");
                               running = false;
