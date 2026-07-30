@@ -1,5 +1,5 @@
 package features;
-
+// interditado, NAO FUI EU Q FIZ O CODIGO, PRECISO ESTUDAR, NAO ENTENDO NADA Q TA ESCRITO AQUI
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;

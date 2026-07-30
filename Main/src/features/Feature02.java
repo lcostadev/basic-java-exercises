@@ -2,10 +2,9 @@ package features;
 import java.util.Scanner;
 // Celsius converter
 public class Feature02 {
-    public static void run(Scanner sc) { // Lembre-se: use 'run' e receba o Scanner do Main
+    public static void run(Scanner sc) {
         System.out.printf("\nWhat do you want calculate?\n1. Celsius to Fahrenheit\n2. Fahrenheit to Celsius\n");
 
-        // Chama a validação passando o Scanner e a mensagem
         double option = Validation.readDouble("\nChose: ", sc);
 
         if (option == 1) {

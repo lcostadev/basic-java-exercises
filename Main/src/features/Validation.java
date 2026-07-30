@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Validation {
 
-    // Valida números inteiros (int)
+    // (int)
     public static int readInt(String prompt, Scanner sc) {
         System.out.print(prompt);
         while (!sc.hasNextInt()) {
@@ -15,7 +15,7 @@ public class Validation {
         return sc.nextInt();
     }
 
-    // Valida números decimais (double)
+    // (double)
     public static double readDouble(String prompt, Scanner sc) {
         System.out.print(prompt);
         while (!sc.hasNextDouble()) {
