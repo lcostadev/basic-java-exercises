@@ -1,5 +1,5 @@
 package features;
-// interditado, NAO FUI EU Q FIZ O CODIGO, PRECISO ESTUDAR, NAO ENTENDO NADA Q TA ESCRITO AQUI
+
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -7,7 +7,7 @@ import java.net.http.HttpResponse;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+//test not concluded
 public class Feature03 {
 
     public static void run(Scanner sc) {

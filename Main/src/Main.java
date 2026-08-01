@@ -3,12 +3,12 @@ import features.Feature02;
 import features.Feature03;
 import features.Feature04;
 import features.Validation;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
-
             boolean running = true;
             while (running) {
                 System.out.println("=== MENU ===");
@@ -18,7 +18,6 @@ public class Main {
                 System.out.println("4 - Triangle area calculator");
                 System.out.println("0 - Exit");
 
-                // Usa a Validation para pedir e validar a opção do menu
                 int option = Validation.readInt("\nChose a option: ", sc);
 
                 switch (option) {
@@ -28,7 +27,7 @@ public class Main {
                     case 4 -> Feature04.run(sc);
                     case 0 -> {
                         System.out.println("\nExiting...");
-                              running = false;
+                        running = false;
                     }
                     default -> System.out.println("\ninvalid number!");
                 }

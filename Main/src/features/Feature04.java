@@ -1,6 +1,9 @@
 package features;
+
 import features.entities.Triangle;
+
 import java.util.Scanner;
+
 // triangle area calculator
 public class Feature04 {
     public static void run(Scanner sc) {
