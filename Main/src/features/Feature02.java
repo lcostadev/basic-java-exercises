@@ -3,7 +3,7 @@ import java.util.Scanner;
 // Celsius converter
 public class Feature02 {
     public static void run(Scanner sc) {
-        System.out.printf("\nWhat do you want calculate?\n1. Celsius to Fahrenheit\n2. Fahrenheit to Celsius\n");
+        System.out.print("\nWhat do you want calculate?\n1. Celsius to Fahrenheit\n2. Fahrenheit to Celsius\n");
 
         double option = Validation.readDouble("\nChose: ", sc);
 
