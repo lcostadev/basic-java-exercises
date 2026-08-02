@@ -2,6 +2,7 @@ import features.Feature01;
 import features.Feature02;
 import features.Feature03;
 import features.Feature04;
+import features.Feature05;
 import features.Validation;
 
 import java.util.Scanner;
@@ -16,6 +17,7 @@ public class Main {
                 System.out.println("2 - Temperature convertor (Feature02)");
                 System.out.println("3 - Currency converter (Feature03) TESTE INTERDITADO, NECESSITA ESTUDO");
                 System.out.println("4 - Triangle area calculator");
+                System.out.println("5 - Client Register");
                 System.out.println("0 - Exit");
 
                 int option = Validation.readInt("\nChose a option: ", sc);
@@ -25,6 +27,7 @@ public class Main {
                     case 2 -> Feature02.run(sc);
                     case 3 -> Feature03.run(sc);
                     case 4 -> Feature04.run(sc);
+                    case 5 -> Feature05.run(sc);
                     case 0 -> {
                         System.out.println("\nExiting...");
                         running = false;
