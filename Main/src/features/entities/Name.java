@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Name {
     public static String nextName(Scanner sc) {
-        String name = sc.nextLine();
+        String name = sc.nextLine().trim();
 
         if (name.trim().isEmpty()) {
             return "";

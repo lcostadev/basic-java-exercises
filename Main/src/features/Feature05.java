@@ -7,25 +7,32 @@ import java.util.Scanner;
 
 public class Feature05 {
     public static void run(Scanner sc) {
-        sc.nextLine();
-        Product productA;
-        productA = new Product();
+        System.out.println("Product Register");
 
-        System.out.println("Cliente Register");
         System.out.print("Name: ");
-        productA.name = Name.nextName(sc);
+        String name = Name.nextName(sc);
+
         System.out.print("Price: $");
-        productA.price = sc.nextDouble();
+        double price = sc.nextDouble();
+
         System.out.print("Quantity in stock: ");
-        productA.quantity = sc.nextInt();
+        int quantity = sc.nextInt();
+
+        Product productA = new Product(name, price, quantity);
 
         System.out.println("Product data: " + productA);
+
+        //+
         System.out.print("Enter the number of products to be added in stock: ");
-        int quantity = sc.nextInt();
-        productA.addProduct(quantity);
-        System.out.print("Enter the number of products to be removed from stock: ");
-        int lQuantity = sc.nextInt();
-        productA.removeProduct(lQuantity);
+        int addProduct = sc.nextInt();
+        productA.addProduct(addProduct);
         System.out.println("Updated data: " + productA);
+
+        //-
+        System.out.print("Enter the number of products to be removed from stock: ");
+        int removeProduct = sc.nextInt();
+        productA.removeProduct(removeProduct);
+        System.out.println("Updated data: " + productA);
+
     }
 }

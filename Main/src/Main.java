@@ -17,7 +17,7 @@ public class Main {
                 System.out.println("2 - Temperature convertor (Feature02)");
                 System.out.println("3 - Currency converter (Feature03) TESTE INTERDITADO, NECESSITA ESTUDO");
                 System.out.println("4 - Triangle area calculator");
-                System.out.println("5 - Client Register");
+                System.out.println("5 - Product Register (Feature05)");
                 System.out.println("0 - Exit");
 
                 int option = Validation.readInt("\nChose a option: ", sc);
