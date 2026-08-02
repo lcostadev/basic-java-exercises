@@ -16,7 +16,7 @@ public class Main {
                 System.out.println("1 - Even or odd (Feature01)");
                 System.out.println("2 - Temperature convertor (Feature02)");
                 System.out.println("3 - Currency converter (Feature03)");
-                System.out.println("4 - Triangle area calculator");
+                System.out.println("4 - Triangle area calculator (Feature04)");
                 System.out.println("5 - Product Register (Feature05)");
                 System.out.println("0 - Exit");
 
