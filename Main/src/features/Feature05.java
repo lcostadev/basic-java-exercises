@@ -1,7 +1,6 @@
 package features;
 
 import entities.Product;
-import util.NameFormatter;
 
 import java.util.Scanner;
 
@@ -10,9 +9,10 @@ public class Feature05 {
         System.out.println("Product Register");
 
         System.out.print("Name: ");
-        String name = NameFormatter.formatName(sc);
+        sc.nextLine();
+        String name = sc.nextLine().toUpperCase();
 
-        System.out.print("Price: $");
+        System.out.print("Price: $ ");
         double price = sc.nextDouble();
 
         System.out.print("Quantity in stock: ");

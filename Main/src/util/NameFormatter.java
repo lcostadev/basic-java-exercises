@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class NameFormatter {
     public static String formatName(Scanner sc) {
-        String name = sc.nextLine().trim();
+        String name = sc.next().trim();
 
         if (name.trim().isEmpty()) {
             return "";

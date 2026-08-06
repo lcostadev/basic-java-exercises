@@ -48,7 +48,7 @@ public class Account {
     public void setName(String name) {
         if (name != null && !name.trim().isEmpty()) {
             String nameClean = name.trim();
-            this.name = nameClean.substring(0, 1).toUpperCase() + nameClean.substring(1);
+            this.name = nameClean.toUpperCase();
         }
     }
 

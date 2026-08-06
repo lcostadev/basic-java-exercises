@@ -16,13 +16,13 @@ public class Feature06 {
         System.out.print("Enter account holder: ");
         String name = sc.nextLine();
 
-        System.out.print("Is there an initial deposit (y/n)?");
+        System.out.print("Is there an initial deposit (y/n)? ");
         String response = sc.next();
 
         Account bm;
 
         if (response.equalsIgnoreCase("y")) {
-            System.out.println("Enter initial deposit amount: ");
+            System.out.print("Enter initial deposit amount: $ ");
             double initialDeposit = sc.nextDouble();
             bm = new Account(accNumber, name, initialDeposit);
         } else if (response.equalsIgnoreCase("n")) {

@@ -8,7 +8,7 @@ public class Main {
         try (Scanner sc = new Scanner(System.in)) {
             boolean running = true;
             while (running) {
-                System.out.println("=== MENU ===");
+                System.out.println("\n\n=== MENU ===");
                 System.out.println("1 - Even or odd (Feature01)");
                 System.out.println("2 - Temperature convertor (Feature02)");
                 System.out.println("3 - Currency converter (Feature03)");
