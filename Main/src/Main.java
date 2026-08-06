@@ -1,5 +1,5 @@
 import features.*;
-import features.util.Validation;
+import util.Validation;
 
 import java.util.Scanner;
 

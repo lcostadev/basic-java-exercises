@@ -1,4 +1,4 @@
-package features.entities;
+package entities;
 
 public class Product {
     public final String name;

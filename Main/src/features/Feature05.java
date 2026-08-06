@@ -1,7 +1,7 @@
 package features;
 
-import features.entities.Product;
-import features.util.Name;
+import entities.Product;
+import util.NameFormatter;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class Feature05 {
         System.out.println("Product Register");
 
         System.out.print("Name: ");
-        String name = Name.nextName(sc);
+        String name = NameFormatter.formatName(sc);
 
         System.out.print("Price: $");
         double price = sc.nextDouble();

@@ -1,6 +1,6 @@
 package features;
 
-import features.util.Validation;
+import util.Validation;
 
 import java.net.URI;
 import java.net.http.HttpClient;

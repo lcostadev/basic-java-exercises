@@ -1,4 +1,4 @@
-package features.entities;
+package entities;
 
 public class Account {
 

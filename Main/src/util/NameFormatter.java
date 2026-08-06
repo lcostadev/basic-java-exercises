@@ -1,9 +1,9 @@
-package features.util;
+package util;
 
 import java.util.Scanner;
 
-public class Name {
-    public static String nextName(Scanner sc) {
+public class NameFormatter {
+    public static String formatName(Scanner sc) {
         String name = sc.nextLine().trim();
 
         if (name.trim().isEmpty()) {

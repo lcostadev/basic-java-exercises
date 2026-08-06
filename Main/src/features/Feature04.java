@@ -1,6 +1,6 @@
 package features;
 
-import features.entities.Triangle;
+import entities.Triangle;
 
 import java.util.Scanner;
 
