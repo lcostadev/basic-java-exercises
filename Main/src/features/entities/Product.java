@@ -1,5 +1,5 @@
 package features.entities;
-//feature05
+//feature05 a
 public class Product {
     private final String name;
     private double price;
