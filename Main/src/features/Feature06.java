@@ -37,12 +37,19 @@ public class Feature06 {
         bm.deposit(sc.nextDouble());
         System.out.println(bm);
 
-        System.out.print("\nEnter a withdraw value($5 tax): ");
-        double withdrawValue = sc.nextDouble();
+        boolean success = false;
 
-        if (bm.withdraw(withdrawValue)) {
-            System.out.println("Withdrawal successful!");
-            System.out.println(bm);
-        } else System.out.println("Withdrawal failed: Insufficient funds or invalid amount.");
+        do {
+            System.out.print("\nEnter a withdraw value($5 tax): ");
+            double withdrawValue = sc.nextDouble();
+
+            if (bm.withdraw(withdrawValue)) {
+                System.out.println("Withdrawal successful!");
+                System.out.println(bm);
+                success = true;
+            } else {
+                System.out.println("Withdrawal failed: Insufficient funds or invalid amount.");
+            }
+        } while (!success);
     }
 }
