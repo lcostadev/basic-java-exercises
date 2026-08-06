@@ -1,7 +1,7 @@
 package features;
 
 import features.entities.Product;
-import features.entities.Name;
+import features.util.Name;
 
 import java.util.Scanner;
 

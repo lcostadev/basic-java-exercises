@@ -1,9 +1,5 @@
-import features.Feature01;
-import features.Feature02;
-import features.Feature03;
-import features.Feature04;
-import features.Feature05;
-import features.Validation;
+import features.*;
+import features.util.Validation;
 
 import java.util.Scanner;
 
@@ -28,6 +24,7 @@ public class Main {
                     case 3 -> Feature03.run(sc);
                     case 4 -> Feature04.run(sc);
                     case 5 -> Feature05.run(sc);
+                    case 6 -> Feature06.run(sc);
                     case 0 -> {
                         System.out.println("\nExiting...");
                         running = false;

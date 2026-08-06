@@ -1,4 +1,4 @@
-package features.entities;
+package features.util;
 
 import java.util.Scanner;
 
