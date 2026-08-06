@@ -9,6 +9,7 @@ import java.net.http.HttpResponse;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 //test not concluded
 public class Feature03 {
 
@@ -37,10 +38,7 @@ public class Feature03 {
         String url = "https://economia.awesomeapi.com.br/last/USD-BRL";
 
         HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(url))
-                .GET()
-                .build();
+        HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).GET().build();
 
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 

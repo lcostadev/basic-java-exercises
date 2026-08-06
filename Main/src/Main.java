@@ -14,6 +14,7 @@ public class Main {
                 System.out.println("3 - Currency converter (Feature03)");
                 System.out.println("4 - Triangle area calculator (Feature04)");
                 System.out.println("5 - Product Register (Feature05)");
+                System.out.println("6 - Bank account creator (Feature06)");
                 System.out.println("0 - Exit");
 
                 int option = Validation.readInt("\nChose a option: ", sc);
