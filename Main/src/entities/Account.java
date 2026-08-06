@@ -54,6 +54,6 @@ public class Account {
 
     @Override
     public String toString() {
-        return "Account Data: " + accNumber + "\nHolder: " + name + "\nBalance: $ " + String.format("%.2f", balance);
+        return "Account Data: \nAccount: " + accNumber + "\nHolder: " + name + "\nBalance: $ " + String.format("%.2f", balance);
     }
 }

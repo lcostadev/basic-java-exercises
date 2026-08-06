@@ -37,7 +37,7 @@ public class Feature06 {
         bm.deposit(sc.nextDouble());
         System.out.println(bm);
 
-        System.out.print("\nEnter a withdraw value: ");
+        System.out.print("\nEnter a withdraw value($5 tax): ");
         double withdrawValue = sc.nextDouble();
 
         if (bm.withdraw(withdrawValue)) {
