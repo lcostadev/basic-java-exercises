@@ -1,10 +1,12 @@
 import features.*;
 import util.Validation;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
         try (Scanner sc = new Scanner(System.in)) {
             boolean running = true;
             while (running) {
@@ -15,6 +17,7 @@ public class Main {
                 System.out.println("4 - Triangle area calculator (Feature04)");
                 System.out.println("5 - Product Register (Feature05)");
                 System.out.println("6 - Bank account creator (Feature06)");
+                System.out.println("7 - Height average calculator (Feature07)");
                 System.out.println("0 - Exit");
 
                 int option = Validation.readInt("\nChose a option: ", sc);
@@ -26,6 +29,7 @@ public class Main {
                     case 4 -> Feature04.run(sc);
                     case 5 -> Feature05.run(sc);
                     case 6 -> Feature06.run(sc);
+                    case 7 -> Feature07.run(sc);
                     case 0 -> {
                         System.out.println("\nExiting...");
                         running = false;
