@@ -24,19 +24,19 @@ public class Main {
                 int option = Validation.readInt("\nChose a option: ", input);
 
                 switch (option) {
-                    case 1: Feature01.run(input);
-                    case 2: Feature02.run(input);
-                    case 3: Feature03.run(input);
-                    case 4: Feature04.run(input);
-                    case 5: Feature05.run(input);
-                    case 6: Feature06.run(input);
-                    case 7: Feature07.run(input);
-                    case 8: Feature08.run(input);
-                    case 0:  {
+                    case 1 -> Feature01.run(input);
+                    case 2 -> Feature02.run(input);
+                    case 3 -> Feature03.run(input);
+                    case 4 -> Feature04.run(input);
+                    case 5 -> Feature05.run(input);
+                    case 6 -> Feature06.run(input);
+                    case 7 -> Feature07.run(input);
+                    case 8 -> Feature08.run(input);
+                    case 0 ->  {
                         System.out.println("\nExiting...");
                         running = false;
                     }
-                    default: System.out.println("\ninvalid number!");
+                    default -> System.out.println("\ninvalid number!");
                 }
             }
         }
