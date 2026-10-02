@@ -3,8 +3,8 @@ package util;
 import java.util.Scanner;
 
 public class NameFormatter {
-    public static String formatName(Scanner sc) {
-        String name = sc.next().trim();
+    public static String formatName(Scanner input) {
+        String name = input.next().trim();
 
         if (name.trim().isEmpty()) {
             return "";
