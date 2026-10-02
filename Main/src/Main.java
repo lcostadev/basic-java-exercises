@@ -21,7 +21,7 @@ public class Main {
                 System.out.println("8 - Inventory (Feature08)");
                 System.out.println("0 - Exit");
 
-                int option = Validation.readInt("\nChose a option: ", input);
+                int option = Validation.readInt("\nChose an option: ", input);
 
                 switch (option) {
                     case 1 -> Feature01.run(input);

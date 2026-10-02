@@ -6,24 +6,24 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Feature06 {
-    public static void run(Scanner sc) {
+    public static void run(Scanner input) {
         Locale.setDefault(Locale.US);
 
         System.out.print("Enter account number: ");
-        int accNumber = sc.nextInt();
-        sc.nextLine();
+        int accNumber = input.nextInt();
+        input.nextLine();
 
         System.out.print("Enter account holder: ");
-        String name = sc.nextLine();
+        String name = input.nextLine();
 
         System.out.print("Is there an initial deposit (y/n)? ");
-        String response = sc.next();
+        String response = input.next();
 
         Account bm;
 
         if (response.equalsIgnoreCase("y")) {
             System.out.print("Enter initial deposit amount: $ ");
-            double initialDeposit = sc.nextDouble();
+            double initialDeposit = input.nextDouble();
             bm = new Account(accNumber, name, initialDeposit);
         } else if (response.equalsIgnoreCase("n")) {
             bm = new Account(accNumber, name);
@@ -34,14 +34,14 @@ public class Feature06 {
         System.out.println("\n" + bm);
 
         System.out.print("\nEnter a deposit value: ");
-        bm.deposit(sc.nextDouble());
+        bm.deposit(input.nextDouble());
         System.out.println(bm);
 
         boolean success = false;
 
         do {
             System.out.print("\nEnter a withdraw value($5 tax): ");
-            double withdrawValue = sc.nextDouble();
+            double withdrawValue = input.nextDouble();
 
             if (bm.withdraw(withdrawValue)) {
                 System.out.println("Withdrawal successful!");

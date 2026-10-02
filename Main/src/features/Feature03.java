@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
 //test not concluded
 public class Feature03 {
 
-    public static void run(Scanner sc) {
+    public static void run(Scanner input) {
         System.out.println("\n=== Currency Converter (USD -> BRL) ===");
 
         try {
@@ -22,7 +22,7 @@ public class Feature03 {
             System.out.printf("Current exchange rate: 1 USD = %.2f BRL\n", usdToBrlRate);
 
             // 2. Pede o valor ao usuário usando a sua classe de validação
-            double dollars = Validation.readDouble("\nEnter value in USD ($): ", sc);
+            double dollars = Validation.readDouble("\nEnter value in USD ($): ", input);
 
             // 3. Calcula e exibe o resultado
             double reais = dollars * usdToBrlRate;

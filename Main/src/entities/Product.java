@@ -1,9 +1,9 @@
 package entities;
 
 public class Product {
-    public final String name;
-    public double price;
-    public int quantity;
+    private final String name;
+    private double price;
+    private int quantity;
 
     public Product(String name, double price, int quantity) {
         this.name = name;
@@ -21,6 +21,22 @@ public class Product {
 
     public void removeProduct(int quantity) {
         this.quantity -= quantity;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     @Override

@@ -5,14 +5,14 @@ import entities.Triangle;
 import java.util.Scanner;
 
 public class Feature04 {
-    public static void run(Scanner sc) {
+    public static void run(Scanner input) {
         System.out.println("Triangle area calculator");
 
         System.out.println("Enter 3 measures from triangle A:");
-        Triangle a = new Triangle(sc.nextDouble(), sc.nextDouble(), sc.nextDouble());
+        Triangle a = new Triangle(input.nextDouble(), input.nextDouble(), input.nextDouble());
 
         System.out.println("Enter 3 measures from triangle B:");
-        Triangle b = new Triangle(sc.nextDouble(), sc.nextDouble(), sc.nextDouble());
+        Triangle b = new Triangle(input.nextDouble(), input.nextDouble(), input.nextDouble());
 
         double areaA = a.area();
         double areaB = b.area();
